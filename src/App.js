@@ -2,7 +2,7 @@ import { useState } from 'react';
 import {createUseStyles} from 'react-jss';
 
 import NumberCounterAnimation2 from './components/NumberCounterAnimation2';
-
+import NumberCounterAnimation from './components/NumberCounterAnimation';
 
 const useStyles = createUseStyles({
     appContainer: {
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className={classes.appContainer}>
-        <NumberCounterAnimation2 number={activeItem} />
+        <NumberCounterAnimation number={activeItem} />
         <input
             type="range"
             min="1"
